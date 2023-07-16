@@ -8,3 +8,4 @@ Y = tf.constant([[2],[4]], tf.float32)
 
 # Matrix multiply X by X's transpose and invert
 beta_0 = tf.linalg.inv(tf.matmul(tf.transpose(X), X))
+print(beta_0)
