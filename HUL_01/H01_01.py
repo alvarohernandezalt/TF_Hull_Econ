@@ -17,3 +17,5 @@ print(beta_1.numpy())
 # Matrix multiply beta_1 by Y
 beta = tf.matmul(beta_1, Y)
 print(beta.numpy())
+
+print(X,Y) #See the different output without using .numpy()
