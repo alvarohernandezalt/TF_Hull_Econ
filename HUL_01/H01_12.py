@@ -18,3 +18,5 @@ print(s1s2_product,"\n")
 print(s1s2_sum,"\n")
 print(ss1s2_product,"\n")
 print(ss1s2_sum,"\n")
+
+# NOTE: for a tensor to be sum with another tensor the both must be of the same shape
