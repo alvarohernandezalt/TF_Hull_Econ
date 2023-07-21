@@ -17,3 +17,8 @@ np.save('images.npy', img)
 
 # Import image data using numpy
 images = np.load('images.npy')
+
+# Convert numpy array into a tensorflow constant
+images=tf.constant(images)
+print(images.numpy())
+
