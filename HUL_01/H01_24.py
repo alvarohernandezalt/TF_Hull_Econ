@@ -24,4 +24,16 @@ print(tf.shape(images))
 
 # Normalize pixel values to [0,1] interval
 images = images / 255.0
-#print(images.numpy())
+print(images.numpy())
+
+# This also can be done with tf.division
+# images = tf.division(images, 255.0)
+
+# Import data and convert to tensorflow with pandas
+data = np.load('data.csv')
+data_tensorflow = tf.constant(data)
+
+# Convert data to numpy array
+datanumpy=np.array(data)
+
+
