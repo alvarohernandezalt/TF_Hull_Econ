@@ -1,6 +1,7 @@
 import tensorflow as tf
 import pandas as pd
 import numpy as np
+import cv2
 
 # Declare image folder and image name
 image_name='prior-1-1.jpg'
