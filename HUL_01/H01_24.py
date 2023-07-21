@@ -19,6 +19,9 @@ np.save('images.npy', img)
 images = np.load('images.npy')
 
 # Convert numpy array into a tensorflow constant
-images=tf.constant(images)
+images=tf.constant(images, dtype=tf.float32)
 print(images.numpy())
 
+# Normalize pixel values to [0,1] interval
+images = images / 255.0
+print(images.numpy())
