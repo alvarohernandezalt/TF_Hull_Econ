@@ -10,5 +10,5 @@ with tf.GradientTape() as t:
     f = 5*y**2
 
 # Compute gradient of f with respect to x
-df_dx = t.gradiet(f,x)
+df_dx = tf.gradient(f,x)
 print (df_dx.numpy())
